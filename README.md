@@ -1,7 +1,16 @@
 # DB_Joins
 Joins, what is join, types
 A Join clause is used to combine rows from two tables , based on a related column between them.
-JOIN > allow us to access data of two and more tables with one query by common column for the whole tables.
+
+
+JOIN > allow us to access data of two and more table with one query by common column(condition column,) for the whole tables.
+INNER and OUTER  join differ by the attitude to the NULL value.
+OUTER Join -> Left jojin, right Join,
+Left join –all records from the left table ant all the mating records of the right table.
+Left table is the one that is in the FROM Clause of the Query, the right table is after the word join.,
+Join condition is after the word on.
+Right join takes all records in the right and all the records that fulfill the condition from the left.
+
 
  SELECT 
       MountainRange, 
