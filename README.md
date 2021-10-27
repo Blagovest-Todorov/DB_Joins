@@ -62,4 +62,13 @@ VALUES
 	(2, 'Tom',56100.00, 103),
 	(3, 'Yana', 60200.00, 101)
 
+	///
+	EXAMPLE :
+	
+	USE SoftUni
+SELECT
+     * 
+    FROM 
+	   Employees AS e
+    INNER JOIN Departments AS d ON e.DepartmentID = d.DepartmentID
 	
