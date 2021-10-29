@@ -71,4 +71,13 @@ SELECT
     FROM 
 	   Employees AS e
     INNER JOIN Departments AS d ON e.DepartmentID = d.DepartmentID
+    
+    ///
+    
+SELECT * FROM Employees AS e 
+LEFT OUTER JOIN Departments AS d
+      ON e.DepartmentID  = d.DepartmentID
+	  WHERE d.DepartmentID IS NOT NULL
+	  
+	  
 	
