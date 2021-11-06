@@ -116,4 +116,16 @@ WHERE ep.EmployeeID = 24
 
 
 //
+
+Problem 16./SOFTUNI	Countries without any Mountains
+Write a query that selects CountryCode. Find all the count of all countries, which don’t have a mountain.
+Example
+
+
+SELECT COUNT(c.CountryCode) AS CountryCode
+FROM Countries AS c
+  LEFT JOIN MountainsCountries AS mc ON mc.CountryCode = c.CountryCode
+  --LEFT JOIN Mountains AS m ON m.Id = mc.MountainId
+  WHERE mc.MountainId IS NULL
+
 	
